@@ -23,6 +23,8 @@
   --menu-list-gap: 10px;
   --section-gap: 20px;
   --paragraph-top-padding: 10px;
+  --main-background-color: #000028;
+  --header-background-image: url(../images/cover-image-dark.png);
 }
 
 @media (width >= 768px) {

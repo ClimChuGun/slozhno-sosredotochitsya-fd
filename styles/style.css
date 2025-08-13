@@ -11,6 +11,7 @@
   background-position: bottom 0px left 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: var(--main-background-color);
 }
 
 .header {
@@ -21,7 +22,7 @@
   padding-inline: var(--padding-size);
   block-size: 100vh;
   padding-block: var(--header-padding-block);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--header-background-image);
 }
 
 .header__icon {

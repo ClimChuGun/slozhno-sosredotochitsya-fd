@@ -16,6 +16,8 @@
   --accent-decor-font-color: #353430;
   --main-text-font-color: #353430;
   --background-pic-url: url("/images/cover-image-light.png");
+  --main-background-color: #fff1f7;
+  --header-background-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .page {
