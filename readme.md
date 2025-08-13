@@ -1,1 +1,0 @@
-git@github.com:ClimChuGun/slozhno-sosredotochitsya-fd.git
