@@ -2,27 +2,26 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: "IBM Plex mono", san-serif;
+  font-family: "IBM Plex mono", monospace;
   font-size: var(--main-font-size);
   font-weight: var(--main-font-weight);
   color: var(--main-text-font-color);
-  background-image: var(--background-pic-url);
   background-size: cover;
   background-position: bottom 0px left 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--main-background-color);
+  background-image: var(--header-background-image);
 }
 
 .header {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: auto;
   padding-inline: var(--padding-size);
   block-size: 100vh;
   padding-block: var(--header-padding-block);
-  background-image: var(--header-background-image);
 }
 
 .header__icon {
@@ -190,6 +189,7 @@
 .footer {
   padding-inline: var(--padding-size);
   block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -216,7 +216,7 @@
   }
 
   .why_hard {
-    grid-template-rows: 1;
+    grid-template-rows: auto;
   }
 
   .why_hard__heading {
@@ -304,4 +304,3 @@
     padding-top: 13vh;
   }
 }
-/**/

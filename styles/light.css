@@ -15,7 +15,6 @@
   --secondary-accent-color: #ffc2e6;
   --accent-decor-font-color: #353430;
   --main-text-font-color: #353430;
-  --background-pic-url: url("/images/cover-image-light.png");
   --main-background-color: #fff1f7;
   --header-background-image: url(../images/cover-image-light.png);
 }
@@ -35,6 +34,10 @@
     --secondary-accent-color: #ffc2e6;
     --accent-decor-font-color: #353430;
     --main-text-font-color: #353430;
-    --background-pic-url: url("/images/cover-image-light.png");
+    --main-background-color: #fff1f7;
+    --header-background-image: url(../images/cover-image-light.png);
+  }
+  .header__icon {
+    display: none;
   }
 }
