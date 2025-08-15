@@ -223,13 +223,15 @@
     grid-column: 1;
   }
 
-  .why-hard__list {
+  .card__list {
     grid-column: 2/4;
+    grid-row: 2;
     padding-inline-start: var(--columns-left-padding);
   }
 
   .causes__list {
     grid-column: 1/4;
+ 
   }
 
   .how-to__heading {
@@ -241,12 +243,6 @@
     grid-column: 2/4;
     grid-row: 1;
     margin-inline-start: var(--columns-left-padding);
-  }
-
-  .how-to__list {
-    grid-column: 2/4;
-    grid-row: 2;
-    padding-inline-start: var(--columns-left-padding);
   }
 
   .pictures__heading {
