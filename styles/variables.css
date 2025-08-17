@@ -41,7 +41,7 @@
 
 @media (width >= 1024px) {
   :root {
-    --header-padding-block: var(--padding-size) 10vh;
+    --header-padding-block: var(--padding-size) 13vh;
     --columns-left-padding: 0px;
     --menu-list-gap: 10px;
   }
