@@ -32,8 +32,8 @@
     --padding-size: 20px;
     --grid-template-columns: repeat(3, 1fr);
     --header-padding-block: 11vh 10vh;
-    --main-padding-block: 60px;
-    --main-gap_between_sections: 80px;
+    --main-padding-block: 83px;
+    --main-gap_between_sections: 25px;
     --columns-left-padding: 8px;
     --menu-list-gap: 8px;
   }
@@ -41,7 +41,7 @@
 
 @media (width >= 1024px) {
   :root {
-    --header-padding-block: var(--padding-size) 13vh;
+    --header-padding-block: var(--padding-size) var(--padding-size);
     --columns-left-padding: 0px;
     --menu-list-gap: 10px;
   }

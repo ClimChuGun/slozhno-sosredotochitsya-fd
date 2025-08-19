@@ -20,7 +20,8 @@
   display: grid;
   grid-template-columns: auto;
   padding-inline: var(--padding-size);
-  block-size: 86vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding-block: var(--header-padding-block);
 }
 
@@ -118,11 +119,11 @@
   text-shadow: var(--accent-color) 0.25rem 0.25rem;
   line-height: 83%;
   align-self: center;
-  padding-top: 20vh;
+  padding-top: 1vh;
 }
 
 .header__title {
-  align-self: end;
+  align-self: center;
 }
 
 .title-decor {
@@ -203,19 +204,30 @@
 }
 
 @media (width >= 768px) {
-  
+
   :root {
-    --header-padding-block: var(--padding-size) 13vh;
+    --header-padding-block: var(--padding-size) 1vh;
     --columns-left-padding: 0px;
     --menu-list-gap: 10px;
   }
   
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .header__theme-menu {
+    justify-self: end;
+    align-self: end;
+}
+
   .slogan {
     text-wrap: nowrap;
+    padding-top: 10vh;
   }
 
   .header__title {
     margin-left: 50%;
+    margin-bottom: 9vh;
   }
 
   .header__slogan {
@@ -223,23 +235,16 @@
     right: 18px;
   }
 
-  .why_hard {
-    grid-template-rows: auto;
-  }
-
-  .why_hard__heading {
-    grid-column: 1;
-  }
-
-  .card__list {
+    .card__list {
     grid-column: 2/4;
     grid-row: 2;
     padding-inline-start: var(--columns-left-padding);
   }
 
   .causes__list {
-    grid-template-columns: repeat(3, 1fr);
     grid-column: 1/4;
+    grid-row: 2;
+    padding-inline-start: var(--columns-left-padding);
   }
 
   .how-to__heading {
@@ -251,6 +256,10 @@
     grid-column: 2/4;
     grid-row: 1;
     margin-inline-start: var(--columns-left-padding);
+  }
+
+  .why-hard__heading {
+    grid-row: 2;
   }
 
   .pictures__heading {
@@ -288,41 +297,12 @@
     grid-column: 2/4;
     grid-row: 4;
   }
-
-  .header__theme-menu-list {
-  flex-direction: row;
-  }
-
-  .header__theme-menu {
-    justify-self: center;
-    align-self: flex-start;
-  }
+  
 }
 
 @media (width >= 1024px) {
 
-  :root {
-    --header-padding-block: var(--padding-size) 13vh;
-    --columns-left-padding: 0px;
-    --menu-list-gap: 10px;
-  }
-
-  .card__list {
-    grid-column: 2/4;
-    grid-row: 1;
-    padding-inline-start: var(--columns-left-padding);
-  }
-
   .causes__list {
     grid-template-columns: repeat(3, 1fr);
-}
-
-.header__theme-menu-list {
-  flex-direction: row;
-  }
-
-.header__theme-menu {
-    justify-self: center;
-    align-self: flex-start;
   }
 }
