@@ -206,13 +206,14 @@
 @media (width >= 768px) {
 
   :root {
-    --header-padding-block: var(--padding-size) 1vh;
+    --header-padding-block: var(--padding-size) var(--padding-size);
     --columns-left-padding: 0px;
     --menu-list-gap: 10px;
   }
   
   .header__theme-menu-list {
     flex-direction: column;
+    /*padding-bottom: var(--padding-size);*/
   }
 
   .header__theme-menu {
@@ -222,13 +223,13 @@
 
   .slogan {
     text-wrap: nowrap;
-    padding-top: 10vh;
+    padding-top: var(--padding-size);
   }
 
   .header__title {
     margin-left: 50%;
-    margin-bottom: 9vh;
-  }
+    /*padding-top: var(--padding-size);*/
+}
 
   .header__slogan {
     position: relative;
@@ -302,6 +303,15 @@
 
 @media (width >= 1024px) {
 
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+}
+  
   .causes__list {
     grid-template-columns: repeat(3, 1fr);
   }
