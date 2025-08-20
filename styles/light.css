@@ -5,29 +5,10 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
+    /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #ff8dcb;
-  --accent-font-color: #353430;
-  --accent-font-color-transparent: #35343040;
-  --secondary-accent-color: #ffc2e6;
-  --accent-decor-font-color: #353430;
-  --main-text-font-color: #353430;
-  --main-background-color: #fff1f7;
-  --header-background-image: url(../images/cover-image-light.png);
-}
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  .header__icon {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root.theme-auto {
     --accent-color: #ff8dcb;
     --accent-font-color: #353430;
     --accent-font-color-transparent: #35343040;
@@ -36,8 +17,27 @@
     --main-text-font-color: #353430;
     --main-background-color: #fff1f7;
     --header-background-image: url(../images/cover-image-light.png);
-  }
-  .header__icon {
-    display: none;
-  }
+}
+
+.theme-light .page {
+    /* Вам также нужно будет написать ряд подобных селекторов */
+    .header__icon {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root.theme-auto {
+        --accent-color: #ff8dcb;
+        --accent-font-color: #353430;
+        --accent-font-color-transparent: #35343040;
+        --secondary-accent-color: #ffc2e6;
+        --accent-decor-font-color: #353430;
+        --main-text-font-color: #353430;
+        --main-background-color: #fff1f7;
+        --header-background-image: url(../images/cover-image-light.png);
+    }
+    .header__icon {
+        display: none;
+    }
 }

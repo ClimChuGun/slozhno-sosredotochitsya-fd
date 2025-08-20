@@ -5,34 +5,34 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
+    /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #ff0070;
-  --accent-font-color: #ff0070;
-  --accent-font-color-transparent: #ff007040;
-  --secondary-accent-color: #db00ff;
-  --accent-decor-font-color: #000028;
-  --main-text-font-color: #f1b2ce;
-  --header-background-image: url("../images/cover-image-dark.png");
+    --accent-color: #ff0070;
+    --accent-font-color: #ff0070;
+    --accent-font-color-transparent: #ff007040;
+    --secondary-accent-color: #db00ff;
+    --accent-decor-font-color: #000028;
+    --main-text-font-color: #f1b2ce;
+    --header-background-image: url("../images/cover-image-dark.png");
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  .header__icon {
-    display: inline;
-  }
+    /* Вам также нужно будет написать ряд подобных селекторов */
+    .header__icon {
+        display: inline;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-  --accent-color: #ff0070;
-  --accent-font-color: #ff0070;
-  --accent-font-color-transparent: #ff007040;
-  --secondary-accent-color: #db00ff;
-  --accent-decor-font-color: #000028;
-  --main-text-font-color: #f1b2ce;
-  --header-background-image: url(../images/cover-image-dark.png);
-  }
+    :root.theme-auto {
+        --accent-color: #ff0070;
+        --accent-font-color: #ff0070;
+        --accent-font-color-transparent: #ff007040;
+        --secondary-accent-color: #db00ff;
+        --accent-decor-font-color: #000028;
+        --main-text-font-color: #f1b2ce;
+        --header-background-image: url(../images/cover-image-dark.png);
+    }
 }
