@@ -194,7 +194,6 @@
 }
 
 .footer {
-    padding-inline: var(--padding-size);
     block-size: 100vh;
     min-block-size: 668px;
     position: relative;
